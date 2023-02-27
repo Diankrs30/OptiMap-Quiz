@@ -65,7 +65,7 @@ You may also see any lint errors in the console.
 
 ## Deployment
 
-[Vercel deploy link](https://fazzpay-zwallet.vercel.app/)
+[Vercel deploy link](https://optimap-quiz-app.vercel.app/)
 
 ## Author
 
