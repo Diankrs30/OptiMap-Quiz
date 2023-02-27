@@ -1,34 +1,72 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# <div align="center">OptiMap Quiz</div>
 
-## Getting Started
+<div align="center">
 
-First, run the development server:
+<br/>
 
-```bash
-npm run dev
-# or
-yarn dev
+</div>
+
+OptiMap Quiz adalah a online quiz website and login/register functionality. This project was created with Next.js. 
+
+## Contents
+
+- [Software & hardware requirement](#software-&-hardware-requirement)
+- [How to install](#how-to-install)
+- [Deployment](#deployment)
+- [Author](#Author)
+
+## Software & hardware requirement
+### Software requirement
+- vscode
+
+### Hardware requirement
+- Computer
+
+
+## How to install
+
+### 1. Clone this repository
+
+Clone this repository by run the following code:
+
+```
+$ git clone <this-repo-url>
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. Install dependency packages
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+Install dependency packages by run the following code inside project folder:
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+```
+$ npm install
+```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+### 3. Configure .env file
 
-## Learn More
+Configure .env file by create file named .env inside project folder and add this line to the file:
 
-To learn more about Next.js, take a look at the following resources:
+```
+NEXT_PUBLIC_BACKEND_URL = "https://optimap-quiz-be.vercel.app/optimap-quiz"
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 4. Run projects
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Run this projects by run the following code:
 
-## Deploy on Vercel
+```
+$ npm run dev
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+It runs the app in the development mode.\
+Open [local host](http://localhost:3000) to view it in your browser.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
+
+## Deployment
+
+[Vercel deploy link](https://fazzpay-zwallet.vercel.app/)
+
+## Author
+
+[@Dian_kartika](https://github.com/Diankrs30/)
