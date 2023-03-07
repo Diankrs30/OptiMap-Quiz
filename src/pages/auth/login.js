@@ -16,7 +16,6 @@ function Login() {
   const router = useRouter();
   const dispatch = useDispatch();
   const isLoading = useSelector((state) => state.auth.isLoading);
-  const errorMsg = useSelector((state) => state.auth.error);
   const [body, setBody] = useState({});
 
   const changeHandler = (e) => {
@@ -47,8 +46,8 @@ function Login() {
       router.push("/");
     };
 
-    const loginDenied = () => {
-      toast.error(`Login failed! ${errorMsg}`);
+    const loginDenied = (error) => {
+      toast.error(`Login failed! ${error.response.data.status}`);
     };
 
     dispatch(authAction.loginThunk(body, loginSuccess, loginDenied));

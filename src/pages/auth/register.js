@@ -15,7 +15,6 @@ import { useDispatch, useSelector } from "react-redux";
 function Register() {
   const router = useRouter();
   const dispatch = useDispatch();
-  const errorMsg = useSelector((state) => state.auth.error);
   const isLoading = useSelector((state) => state.auth.isLoading);
   const [body, setBody] = useState({});
 
@@ -57,8 +56,8 @@ function Register() {
       router.push("/auth/login");
     };
 
-    const registerDenied = () => {
-      toast.error(`Login failed! ${errorMsg}`);
+    const registerDenied = (error) => {
+      toast.error(`Login failed! ${error.response.data.status}`);
     };
 
     dispatch(authAction.registerThunk(body, registerSuccess, registerDenied));
